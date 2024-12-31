@@ -6,19 +6,31 @@
       "use": "@vercel/static"
     },
     {
-      "src": "styles/*",
+      "src": "styles/**/*",
       "use": "@vercel/static"
     },
     {
-      "src": "images/*",
+      "src": "images/**/*",
       "use": "@vercel/static"
     },
     {
-      "src": "scripts/*",
+      "src": "scripts/**/*",
       "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/styles/(.*)",
+      "dest": "/styles/$1"
+    },
+    {
+      "src": "/images/(.*)",
+      "dest": "/images/$1"
+    },
+    {
+      "src": "/scripts/(.*)",
+      "dest": "/scripts/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "/af-rps-addEventListener.html"
