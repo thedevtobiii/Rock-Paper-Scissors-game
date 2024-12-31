@@ -4,6 +4,18 @@
     {
       "src": "af-rps-addEventListener.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "styles/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "images/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "scripts/*",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
